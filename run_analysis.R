@@ -65,7 +65,7 @@ loadTypeDataSet <- function(folder, xfile, yfile, subjfile, colNms, sampleType) 
 
 remoteFile <- 'https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip'
 
-##dataFiles <- fetchRemoteFile(remoteFile, 'data/', unzip=TRUE)
+dataFiles <- fetchRemoteFile(remoteFile, 'data/', unzip=TRUE)
 
 ## top leve base folder for the data
 folderBase <- "data/UCI HAR Dataset/"
@@ -152,5 +152,5 @@ for(act in df_ActivityLabels$label) {
     }
 }
 
-write.csv(computedMeansDataSet, './computedMeansTidyDataSet.csv', row.names=FALSE)
+write.table(computedMeansDataSet, './computedMeansTidyDataSet.txt', row.names=FALSE)
 
