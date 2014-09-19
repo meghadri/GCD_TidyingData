@@ -143,6 +143,8 @@ getMean <- function(subj, act, feat) {
 }
 
 ### create the computed tidy data set
+
+### This is bloody slow, even with pre-allocation of the data frame. TODO: Should measure performance with a data.matrix 
 numComputed <- 1
 computedMeansDataSet <- data.frame(subject = numeric(14220), activity = character(14220), feature = character(14220), mean = numeric(14220), stringsAsFactors=FALSE)
 NUM_SUBJECTS <- 30
