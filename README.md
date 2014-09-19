@@ -27,7 +27,7 @@ The features of interest are those that represent the mean, and standard deviati
 
 > A file, *colmappings.csv*, has also been provided that contains the mappings from the column names in the provided data set to, what is hopefully, a more human-readable and comprehensible variation.
 
-See Codebook.rmd for details
+See codebook [markdown](CodeBook.md), or as [html](CodeBook.html) for details
  
 
 ***
@@ -41,7 +41,7 @@ The following is the flow of the logic in the submitted R script.
 * Downloads (and unzips) the data file from the remote location URL to a subfolder *data/* of the working directory
 * The measurements of interest are extracted from features.txt. 
 * Two data tables, for test and training, are created from the corresponding files (*X_train.txt* & *X_test.txt*), with only the measurements (those indicating mean or std) extracted from the files, and three columns which indicate the subject, activity, and source (test or training) are added to these data tables. 
-* The tidied up data frame is writted to *mergedTidyDataSet.csv*, and the data frame with the computed means is writted to *computedMeansTidyDataSet.csv* in the current working directory
+* The tidied up data frame is writted to [*mergedTidyDataSet.csv*](mergedTidyDataSet.csv), and the data frame with the computed means is writted to [*computedMeansTidyDataSet.csv*](computedMeansTidyDataSet.csv) in the current working directory
 
 
 ***

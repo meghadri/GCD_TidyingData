@@ -75,7 +75,7 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <blockquote>
 <p>A file, <em>colmappings.csv</em>, has also been provided that contains the mappings from the column names in the provided data set to, what is hopefully, a more human-readable and comprehensible variation.</p>
 </blockquote>
-<p>See Codebook.rmd for details</p>
+<p>See codebook <a href="CodeBook.md">markdown</a>, or as <a href="CodeBook.html">html</a> for details</p>
 <hr />
 </div>
 <div id="description-of-steps-in-the-r-script" class="section level3">
@@ -86,7 +86,7 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <li>Downloads (and unzips) the data file from the remote location URL to a subfolder <em>data/</em> of the working directory</li>
 <li>The measurements of interest are extracted from features.txt.</li>
 <li>Two data tables, for test and training, are created from the corresponding files (<em>X_train.txt</em> &amp; <em>X_test.txt</em>), with only the measurements (those indicating mean or std) extracted from the files, and three columns which indicate the subject, activity, and source (test or training) are added to these data tables.</li>
-<li>The tidied up dataset is writted to <em>mergedTidyDataSet.csv</em>, and the dataset with the computed means is writted to <em>computedMeansTidyDataSet.csv</em> in the current working directory</li>
+<li>The tidied up data frame is writted to <a href="mergedTidyDataSet.csv"><em>mergedTidyDataSet.csv</em></a>, and the data frame with the computed means is writted to <a href="computedMeansTidyDataSet.csv"><em>computedMeansTidyDataSet.csv</em></a> in the current working directory</li>
 </ul>
 <hr />
 </div>
