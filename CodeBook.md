@@ -101,3 +101,4 @@ meanFreq.BodyGyro.Magnitude.OverFreq	    |	fBodyBodyGyroMag-meanFreq()     |   F
 mean.BodyGyroJerk.Magnitude.OverFreq	    |	fBodyBodyGyroJerkMag-mean()     |   Frequency   |
 stddev.BodyGyroJerk.Magnitude.OverFreq  	|	fBodyBodyGyroJerkMag-std()      |   Frequency   |
 meanFreq.BodyGyroJerk.Magnitude.OverFreq	|	fBodyBodyGyroJerkMag-meanFreq() |   Frequency   |
+

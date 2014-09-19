@@ -86,13 +86,13 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <li>Downloads (and unzips) the data file from the remote location URL to a subfolder <em>data/</em> of the working directory</li>
 <li>The measurements of interest are extracted from features.txt.</li>
 <li>Two data tables, for test and training, are created from the corresponding files (<em>X_train.txt</em> &amp; <em>X_test.txt</em>), with only the measurements (those indicating mean or std) extracted from the files, and three columns which indicate the subject, activity, and source (test or training) are added to these data tables.</li>
-<li>The tidied up data frame is writted to <a href="mergedTidyDataSet.csv"><em>mergedTidyDataSet.csv</em></a>, and the data frame with the computed means is writted to <a href="computedMeansTidyDataSet.csv"><em>computedMeansTidyDataSet.csv</em></a> in the current working directory</li>
+<li>The tidied up data frame is writted to <a href="mergedTidyDataSet.txt"><em>mergedTidyDataSet.txt</em></a>, and the data frame with the computed means is writted to <a href="computedMeansTidyDataSet.txt"><em>computedMeansTidyDataSet.txt</em></a> in the current working directory</li>
 </ul>
 <hr />
 </div>
 <div id="summary-1" class="section level3">
 <h3>Summary</h3>
-<p>The merged tidy dataset has the features, along with the subject id, activity, and source of the data as the columns where each row contains the corresponding measured or derived statistic for each subject by activity. The computed means tidy dataset has as columns, the feature specified in the row cell, and columns which represent each combination of a (subject, activity) composite observed in the experiment. Each cell under such a composite column lists the mean of the recorded/derived values of the corresponding feature (in the 1st column) presented in the downloaded data.</p>
+<p>The merged tidy dataset has the subjectid, activity, feature statistic and its values as the columns - each row contains the corresponding measured or derived feature statistic for each subject by activity. This dataset has 813621 row entries. The computed means tidy dataset has as columns, the subjectid, activity, feature statistic, and its computed mean. This dataset has 14220 row entries.</p>
 </div>
 
 

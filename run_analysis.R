@@ -65,7 +65,7 @@ loadTypeDataSet <- function(folder, xfile, yfile, subjfile, colNms, sampleType) 
 
 remoteFile <- 'https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip'
 
-dataFiles <- fetchRemoteFile(remoteFile, 'data/', unzip=TRUE)
+## dataFiles <- fetchRemoteFile(remoteFile, 'data/', unzip=TRUE)
 
 ## top leve base folder for the data
 folderBase <- "data/UCI HAR Dataset/"
@@ -125,32 +125,41 @@ for(i in seq(1, nrow(colMappings), 1)) {
     colnames(dfMerged)[which(names(dfMerged) == colMappings$rawname[i])] <- colMappings$cleanname[i]
 }
 
+library(reshape2)
+## Creating merged skinny tidy data set
+dfMerged <- melt(dfMerged, id = c('subjectid', 'activity'), measure.vars = colMappings$cleanname)
+colnames(dfMerged)[which(names(dfMerged) == 'variable')] <- 'feature'
 
 ### Write out the tidied and merged dataset to file
-write.csv(dfMerged, './mergedTidyDataSet.csv', row.names=FALSE)
+## write.csv(dfMerged, './mergedTidyDataSet.txt', row.names=FALSE)
+write.table(dfMerged, './mergedTidyDataSet.txt', row.names=FALSE)
+
 
 ### Function to calculate means 
-getMean <- function(subj, act, measure) {
-    ss <- dfMerged[which(dfMerged$subjectid == subj & dfMerged$activity == act),]
-    vals <- ss[which(names(ss) == measure)]
-    ret <- mean(vals[,1])
+getMean <- function(subj, act, feat) {
+    ss <- dfMerged[which(dfMerged$subjectid == subj & dfMerged$activity == act & dfMerged$feature == feat),]
+    ret <- mean(ss$value)
     ret
 }
 
-computedMeansDataSet <- data.frame(feature = colMappings$cleanname)
+### create the computed tidy data set
+numComputed <- 1
+computedMeansDataSet <- data.frame(subject = numeric(14220), activity = character(14220), feature = character(14220), mean = numeric(14220), stringsAsFactors=FALSE)
 NUM_SUBJECTS <- 30
 for(act in df_ActivityLabels$label) {
     for(subj in seq(1, NUM_SUBJECTS, 1)) {
-        newColVals <- vector(mode='numeric', length=0)
-        newColNm <- paste0('subject',subj, '.',act)
+        meanVal <- 'NA'
         for(imap in seq(1, nrow(colMappings), 1)) {
             meanVal <- getMean(subj, act, colMappings$cleanname[imap])
-            newColVals[imap] <- meanVal
+            computedMeansDataSet[numComputed, ] <- c(subj, act, colMappings$cleanname[imap], meanVal)
+            numComputed <- numComputed + 1
         }
         
-        computedMeansDataSet[,newColNm] <- newColVals
+        print(".")
     }
 }
 
+### Write out the tidied and merged dataset to file
+## write.csv(computedMeansDataSet, './mergedTidyDataSet.csv', row.names=FALSE)
 write.table(computedMeansDataSet, './computedMeansTidyDataSet.txt', row.names=FALSE)
 

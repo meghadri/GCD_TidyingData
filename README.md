@@ -41,12 +41,12 @@ The following is the flow of the logic in the submitted R script.
 * Downloads (and unzips) the data file from the remote location URL to a subfolder *data/* of the working directory
 * The measurements of interest are extracted from features.txt. 
 * Two data tables, for test and training, are created from the corresponding files (*X_train.txt* & *X_test.txt*), with only the measurements (those indicating mean or std) extracted from the files, and three columns which indicate the subject, activity, and source (test or training) are added to these data tables. 
-* The tidied up data frame is writted to [*mergedTidyDataSet.csv*](mergedTidyDataSet.csv), and the data frame with the computed means is writted to [*computedMeansTidyDataSet.csv*](computedMeansTidyDataSet.csv) in the current working directory
+* The tidied up data frame is writted to [*mergedTidyDataSet.txt*](mergedTidyDataSet.txt), and the data frame with the computed means is writted to [*computedMeansTidyDataSet.txt*](computedMeansTidyDataSet.txt) in the current working directory
 
 
 ***
 ### Summary
-The merged tidy dataset has the features, along with the subject id, activity, and source of the data as the columns where each row contains the corresponding measured or derived statistic for each subject by activity. 
-The computed means tidy dataset has as columns, the feature specified in the row cell, and columns which represent each combination of a (subject, activity) composite observed in the experiment. Each cell under such a composite column lists the mean of the recorded/derived values of the corresponding feature (in the 1st column) presented in the downloaded data.
+The merged tidy dataset has the subjectid, activity, feature statistic and its values as the columns -  each row contains the corresponding measured or derived feature statistic for each subject by activity. This dataset has 813621 row entries.
+The computed means tidy dataset has as columns, the subjectid, activity, feature statistic, and its computed mean. This dataset has 14220 row entries.
 
 
