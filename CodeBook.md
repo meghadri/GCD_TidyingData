@@ -20,84 +20,84 @@ Thus the raw feature name, **tBodyAcc-mean()-X** maps to **mean.BodyAccel.Xaxis.
 Body measurements are indicated by 'Body'. Gravity by 'Grav'. 
 
 ### Mapping of new tidied feature names to 'raw' names
-Tidy Name                                   |	Raw Name
---------------------------------------------|-------------------------
-mean.BodyAccel.Xaxis.OverTime	            |	tBodyAcc-mean()-X
-mean.BodyAccel.Yaxis.OverTime	            |	tBodyAcc-mean()-Y
-mean.BodyAccel.Zaxis.OverTime           	|	tBodyAcc-mean()-Z
-stddev.BodyAccel.XAxis.OverTime	            |	tBodyAcc-std()-X
-stddev.BodyAccel.YAxis.OverTime	            |	tBodyAcc-std()-Y
-stddev.BodyAccel.ZAxis.OverTime	            |	tBodyAcc-std()-Z
-mean.GravAccel.XAxis.OverTime           	|	tGravityAcc-mean()-X
-mean.GravAccel.YAxis.OverTime           	|	tGravityAcc-mean()-Y
-mean.GravAccel.ZAxis.OverTime           	|	tGravityAcc-mean()-Z
-stddev.GravAccel.XAxis.OverTime         	|	tGravityAcc-std()-X
-stddev.GravAccel.YAxis.OverTime	            |	tGravityAcc-std()-Y
-stddev.GravAccel.ZAxis.OverTime	            |	tGravityAcc-std()-Z
-mean.BodyAccelJerk.XAxis.OverTime        	|	tBodyAccJerk-mean()-X
-mean.BodyAccelJerk.YAxis.OverTime       	|	tBodyAccJerk-mean()-Y
-mean.BodyAccelJerk.ZAxis.OverTime       	|	tBodyAccJerk-mean()-Z
-stddev.BodyAccelJerk.XAxis.OverTime	        |	tBodyAccJerk-std()-X
-stddev.BodyAccelJerk.YAxis.OverTime	        |	tBodyAccJerk-std()-Y
-stddev.BodyAccelJerk.YAxis.OverTime	        |	tBodyAccJerk-std()-Z
-mean.BodyGyro.XAxis.OverTime            	|	tBodyGyro-mean()-X
-mean.BodyGyro.YAxis.OverTime              	|	tBodyGyro-mean()-Y
-mean.BodyGyro.ZAxis.OverTime            	|	tBodyGyro-mean()-Z
-stddev.BodyGyro.XAxis.OverTime          	|	tBodyGyro-std()-X
-stddev.BodyGyro.YAxis.OverTime          	|	tBodyGyro-std()-Y
-stddev.BodyGyro.ZAxis.OverTime          	|	tBodyGyro-std()-Z
-mean.BodyGyroJerk.XAxis.OverTime        	|	tBodyGyroJerk-mean()-X
-mean.BodyGyroJerk.YAxis.OverTime        	|	tBodyGyroJerk-mean()-Y
-mean.BodyGyroJerk.ZAxis.OverTime        	|	tBodyGyroJerk-mean()-Z
-stddev.BodyGyroJerk.XAxis.OverTime      	|	tBodyGyroJerk-std()-X
-stddev.BodyGyroJerk.YAxis.OverTime      	|	tBodyGyroJerk-std()-Y
-stddev.BodyGyroJerk.ZAxis.OverTime	        |	tBodyGyroJerk-std()-Z
-mean.BodyAccel.Magnitude.OverTime	        |	tBodyAccMag-mean()
-stddev.BodyAccel.Magnitude.OverTime	        |	tBodyAccMag-std()
-mean.GravAccel.Magnitude.OverTime   	    |	tGravityAccMag-mean()
-stddev.GravAcces.Magnitude.OverTime     	|	tGravityAccMag-std()
-mean.BodyAccelJerk.Magnitude.OverTime    	|	tBodyAccJerkMag-mean()
-stddev.BodyAccelJerk.Magnitude.OverTime	    |	tBodyAccJerkMag-std()
-mean.BodyGyro.Magnitude.OverTime        	|	tBodyGyroMag-mean()
-stddev.BodyGyro.Magnitude.OverTime      	|	tBodyGyroMag-std()
-mean.BodyGyroJerk.Magnitude.OverTime	    |	tBodyGyroJerkMag-mean()
-stddev.BodyGyroJerk.Magnitude.OverTime	    |	tBodyGyroJerkMag-std()
-mean.BodyAccel.Xaxis.OverFreq	            |	fBodyAcc-mean()-X
-mean.BodyAccel.Yaxis.OverFreq	            |	fBodyAcc-mean()-Y
-mean.BodyAccel.Zaxis.OverFreq	            |	fBodyAcc-mean()-Z
-stddev.BodyAccel.Xaxis.OverFreq	            |	fBodyAcc-std()-X
-stddev.BodyAccel.Yaxis.OverFreq	            |	fBodyAcc-std()-Y
-stddev.BodyAccel.Zaxis.OverFreq	            |	fBodyAcc-std()-Z
-meanFreq.BodyAccel.Xaxis.OverFreq	        |	fBodyAcc-meanFreq()-X
-meanFreq.BodyAccel.Yaxis.OverFreq	        |	fBodyAcc-meanFreq()-Y
-meanFreq.BodyAccel.Zaxis.OverFreq	        |	fBodyAcc-meanFreq()-Z
-mean.BodyAccelJerk.Xaxis.OverFreq	        |	fBodyAccJerk-mean()-X
-mean.BodyAccelJerk.Yaxis.OverFreq	        |	fBodyAccJerk-mean()-Y
-mean.BodyAccelJerk.Zaxis.OverFreq	        |	fBodyAccJerk-mean()-Z
-stddev.BodyAccelJerk.Xaxis.OverFreq	        |	fBodyAccJerk-std()-X
-stddev.BodyAccelJerk.Yaxis.OverFreq	        |	fBodyAccJerk-std()-Y
-stddev.BodyAccelJerk.Zaxis.OverFreq	        |	fBodyAccJerk-std()-Z
-meanFreq.BodyAccelJerk.Xaxis.OverFreq	    |	fBodyAccJerk-meanFreq()-X
-meanFreq.BodyAccelJerk.Yaxis.OverFreq	    |	fBodyAccJerk-meanFreq()-Y
-meanFreq.BodyAccelJerk.Zaxis.OverFreq   	|	fBodyAccJerk-meanFreq()-Z
-mean.BodyGyro.Xaxis.OverFreq	            |	fBodyGyro-mean()-X
-mean.BodyGyro.Yaxis.OverFreq	            |	fBodyGyro-mean()-Y
-mean.BodyGyro.Zaxis.OverFreq	            |	fBodyGyro-mean()-Z
-stddev.BodyGyro.Xaxis.OverFreq	            |	fBodyGyro-std()-X
-stddev.BodyGyro.Yaxis.OverFreq	            |	fBodyGyro-std()-Y
-stddev.BodyGyro.Zaxis.OverFreq	            |	fBodyGyro-std()-Z
-meanFreq.BodyGyro.Xaxis.OverFreq	        |	fBodyGyro-meanFreq()-X
-meanFreq.BodyGyro.Yaxis.OverFreq            |	fBodyGyro-meanFreq()-Y
-meanFreq.BodyGyro.Zaxis.OverFreq	        |	fBodyGyro-meanFreq()-Z
-mean.BodyAccel.Magnitude.OverFreq	        |	fBodyAccMag-mean()
-stddev.BodyAccel.Magnitude.OverFreq	        |	fBodyAccMag-std()
-meanFreq.BodyAccel.Magnitude.OverFreq	    |	fBodyAccMag-meanFreq()
-mean.BodyAccelJerk.Magnitude.OverFreq	    |	fBodyBodyAccJerkMag-mean()
-stddev.BodyAccelJerk.Magnitude.OverFreq	    |	fBodyBodyAccJerkMag-std()
-meanFreq.BodyAccelJerk.Magnitude.OverFreq	|	fBodyBodyAccJerkMag-meanFreq()
-mean.BodyGyro.Magnitude.OverFreq	        |	fBodyBodyGyroMag-mean()
-stddev.BodyGyro.Magnitude.OverFreq      	|	fBodyBodyGyroMag-std()
-meanFreq.BodyGyro.Magnitude.OverFreq	    |	fBodyBodyGyroMag-meanFreq()
-mean.BodyGyroJerk.Magnitude.OverFreq	    |	fBodyBodyGyroJerkMag-mean()
-stddev.BodyGyroJerk.Magnitude.OverFreq  	|	fBodyBodyGyroJerkMag-std()
-meanFreq.BodyGyroJerk.Magnitude.OverFreq	|	fBodyBodyGyroJerkMag-meanFreq()
+Tidy Name                                   |	Raw Name                        | Meas. Domain  |
+--------------------------------------------|-----------------------------------|---------------|
+mean.BodyAccel.Xaxis.OverTime	            |	tBodyAcc-mean()-X               |   Time        |
+mean.BodyAccel.Yaxis.OverTime	            |	tBodyAcc-mean()-Y               |   Time        |
+mean.BodyAccel.Zaxis.OverTime           	|	tBodyAcc-mean()-Z               |   Time        |
+stddev.BodyAccel.XAxis.OverTime	            |	tBodyAcc-std()-X                |   Time        |
+stddev.BodyAccel.YAxis.OverTime	            |	tBodyAcc-std()-Y                |   Time        |
+stddev.BodyAccel.ZAxis.OverTime	            |	tBodyAcc-std()-Z                |   Time        |
+mean.GravAccel.XAxis.OverTime           	|	tGravityAcc-mean()-X            |   Time        |
+mean.GravAccel.YAxis.OverTime           	|	tGravityAcc-mean()-Y            |   Time        |
+mean.GravAccel.ZAxis.OverTime           	|	tGravityAcc-mean()-Z            |   Time        |
+stddev.GravAccel.XAxis.OverTime         	|	tGravityAcc-std()-X             |   Time        |
+stddev.GravAccel.YAxis.OverTime	            |	tGravityAcc-std()-Y             |   Time        |
+stddev.GravAccel.ZAxis.OverTime	            |	tGravityAcc-std()-Z             |   Time        |
+mean.BodyAccelJerk.XAxis.OverTime        	|	tBodyAccJerk-mean()-X           |   Time        |
+mean.BodyAccelJerk.YAxis.OverTime       	|	tBodyAccJerk-mean()-Y           |   Time        |
+mean.BodyAccelJerk.ZAxis.OverTime       	|	tBodyAccJerk-mean()-Z           |   Time        |
+stddev.BodyAccelJerk.XAxis.OverTime	        |	tBodyAccJerk-std()-X            |   Time        |
+stddev.BodyAccelJerk.YAxis.OverTime	        |	tBodyAccJerk-std()-Y            |   Time        |
+stddev.BodyAccelJerk.YAxis.OverTime	        |	tBodyAccJerk-std()-Z            |   Time        |
+mean.BodyGyro.XAxis.OverTime            	|	tBodyGyro-mean()-X              |   Time        |
+mean.BodyGyro.YAxis.OverTime              	|	tBodyGyro-mean()-Y              |   Time        |
+mean.BodyGyro.ZAxis.OverTime            	|	tBodyGyro-mean()-Z              |   Time        |
+stddev.BodyGyro.XAxis.OverTime          	|	tBodyGyro-std()-X               |   Time        |
+stddev.BodyGyro.YAxis.OverTime          	|	tBodyGyro-std()-Y               |   Time        |
+stddev.BodyGyro.ZAxis.OverTime          	|	tBodyGyro-std()-Z               |   Time        |
+mean.BodyGyroJerk.XAxis.OverTime        	|	tBodyGyroJerk-mean()-X          |   Time        |
+mean.BodyGyroJerk.YAxis.OverTime        	|	tBodyGyroJerk-mean()-Y          |   Time        |
+mean.BodyGyroJerk.ZAxis.OverTime        	|	tBodyGyroJerk-mean()-Z          |   Time        |
+stddev.BodyGyroJerk.XAxis.OverTime      	|	tBodyGyroJerk-std()-X           |   Time        |
+stddev.BodyGyroJerk.YAxis.OverTime      	|	tBodyGyroJerk-std()-Y           |   Time        |
+stddev.BodyGyroJerk.ZAxis.OverTime	        |	tBodyGyroJerk-std()-Z           |   Time        |
+mean.BodyAccel.Magnitude.OverTime	        |	tBodyAccMag-mean()              |   Time        |
+stddev.BodyAccel.Magnitude.OverTime	        |	tBodyAccMag-std()               |   Time        |
+mean.GravAccel.Magnitude.OverTime   	    |	tGravityAccMag-mean()           |   Time        |
+stddev.GravAcces.Magnitude.OverTime     	|	tGravityAccMag-std()            |   Time        |
+mean.BodyAccelJerk.Magnitude.OverTime    	|	tBodyAccJerkMag-mean()          |   Time        |
+stddev.BodyAccelJerk.Magnitude.OverTime	    |	tBodyAccJerkMag-std()           |   Time        |
+mean.BodyGyro.Magnitude.OverTime        	|	tBodyGyroMag-mean()             |   Time        |
+stddev.BodyGyro.Magnitude.OverTime      	|	tBodyGyroMag-std()              |   Time        |
+mean.BodyGyroJerk.Magnitude.OverTime	    |	tBodyGyroJerkMag-mean()         |   Time        |
+stddev.BodyGyroJerk.Magnitude.OverTime	    |	tBodyGyroJerkMag-std()          |   Time        |
+mean.BodyAccel.Xaxis.OverFreq	            |	fBodyAcc-mean()-X               |   Frequency   |
+mean.BodyAccel.Yaxis.OverFreq	            |	fBodyAcc-mean()-Y               |   Frequency   |
+mean.BodyAccel.Zaxis.OverFreq	            |	fBodyAcc-mean()-Z               |   Frequency   |
+stddev.BodyAccel.Xaxis.OverFreq	            |	fBodyAcc-std()-X                |   Frequency   |
+stddev.BodyAccel.Yaxis.OverFreq	            |	fBodyAcc-std()-Y                |   Frequency   |
+stddev.BodyAccel.Zaxis.OverFreq	            |	fBodyAcc-std()-Z                |   Frequency   |
+meanFreq.BodyAccel.Xaxis.OverFreq	        |	fBodyAcc-meanFreq()-X           |   Frequency   |
+meanFreq.BodyAccel.Yaxis.OverFreq	        |	fBodyAcc-meanFreq()-Y           |   Frequency   |
+meanFreq.BodyAccel.Zaxis.OverFreq	        |	fBodyAcc-meanFreq()-Z           |   Frequency   |
+mean.BodyAccelJerk.Xaxis.OverFreq	        |	fBodyAccJerk-mean()-X           |   Frequency   |
+mean.BodyAccelJerk.Yaxis.OverFreq	        |	fBodyAccJerk-mean()-Y           |   Frequency   |
+mean.BodyAccelJerk.Zaxis.OverFreq	        |	fBodyAccJerk-mean()-Z           |   Frequency   |
+stddev.BodyAccelJerk.Xaxis.OverFreq	        |	fBodyAccJerk-std()-X            |   Frequency   |
+stddev.BodyAccelJerk.Yaxis.OverFreq	        |	fBodyAccJerk-std()-Y            |   Frequency   |
+stddev.BodyAccelJerk.Zaxis.OverFreq	        |	fBodyAccJerk-std()-Z            |   Frequency   |
+meanFreq.BodyAccelJerk.Xaxis.OverFreq	    |	fBodyAccJerk-meanFreq()-X       |   Frequency   |
+meanFreq.BodyAccelJerk.Yaxis.OverFreq	    |	fBodyAccJerk-meanFreq()-Y       |   Frequency   |
+meanFreq.BodyAccelJerk.Zaxis.OverFreq   	|	fBodyAccJerk-meanFreq()-Z       |   Frequency   |
+mean.BodyGyro.Xaxis.OverFreq	            |	fBodyGyro-mean()-X              |   Frequency   |
+mean.BodyGyro.Yaxis.OverFreq	            |	fBodyGyro-mean()-Y              |   Frequency   |
+mean.BodyGyro.Zaxis.OverFreq	            |	fBodyGyro-mean()-Z              |   Frequency   |
+stddev.BodyGyro.Xaxis.OverFreq	            |	fBodyGyro-std()-X               |   Frequency   |
+stddev.BodyGyro.Yaxis.OverFreq	            |	fBodyGyro-std()-Y               |   Frequency   |
+stddev.BodyGyro.Zaxis.OverFreq	            |	fBodyGyro-std()-Z               |   Frequency   |
+meanFreq.BodyGyro.Xaxis.OverFreq	        |	fBodyGyro-meanFreq()-X          |   Frequency   |
+meanFreq.BodyGyro.Yaxis.OverFreq            |	fBodyGyro-meanFreq()-Y          |   Frequency   |
+meanFreq.BodyGyro.Zaxis.OverFreq	        |	fBodyGyro-meanFreq()-Z          |   Frequency   |
+mean.BodyAccel.Magnitude.OverFreq	        |	fBodyAccMag-mean()              |   Frequency   |
+stddev.BodyAccel.Magnitude.OverFreq	        |	fBodyAccMag-std()               |   Frequency   |
+meanFreq.BodyAccel.Magnitude.OverFreq	    |	fBodyAccMag-meanFreq()          |   Frequency   |
+mean.BodyAccelJerk.Magnitude.OverFreq	    |	fBodyBodyAccJerkMag-mean()      |   Frequency   |
+stddev.BodyAccelJerk.Magnitude.OverFreq	    |	fBodyBodyAccJerkMag-std()       |   Frequency   |
+meanFreq.BodyAccelJerk.Magnitude.OverFreq	|	fBodyBodyAccJerkMag-meanFreq()  |   Frequency   |
+mean.BodyGyro.Magnitude.OverFreq	        |	fBodyBodyGyroMag-mean()         |   Frequency   |
+stddev.BodyGyro.Magnitude.OverFreq      	|	fBodyBodyGyroMag-std()          |   Frequency   |
+meanFreq.BodyGyro.Magnitude.OverFreq	    |	fBodyBodyGyroMag-meanFreq()     |   Frequency   |
+mean.BodyGyroJerk.Magnitude.OverFreq	    |	fBodyBodyGyroJerkMag-mean()     |   Frequency   |
+stddev.BodyGyroJerk.Magnitude.OverFreq  	|	fBodyBodyGyroJerkMag-std()      |   Frequency   |
+meanFreq.BodyGyroJerk.Magnitude.OverFreq	|	fBodyBodyGyroJerkMag-meanFreq() |   Frequency   |

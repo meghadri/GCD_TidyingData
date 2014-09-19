@@ -16,7 +16,7 @@
 "tBodyAccJerk-mean()-Z","mean.BodyAccelJerk.ZAxis.OverTime"
 "tBodyAccJerk-std()-X","stddev.BodyAccelJerk.XAxis.OverTime"
 "tBodyAccJerk-std()-Y","stddev.BodyAccelJerk.YAxis.OverTime"
-"tBodyAccJerk-std()-Z","stddev.BodyAccelJerk.YAxis.OverTime"
+"tBodyAccJerk-std()-Z","stddev.BodyAccelJerk.ZAxis.OverTime"
 "tBodyGyro-mean()-X","mean.BodyGyro.XAxis.OverTime"
 "tBodyGyro-mean()-Y","mean.BodyGyro.YAxis.OverTime"
 "tBodyGyro-mean()-Z","mean.BodyGyro.ZAxis.OverTime"
